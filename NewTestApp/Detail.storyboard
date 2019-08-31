@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14865.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail Default View-->
+        <scene sceneID="Mlg-4u-aDm">
+            <objects>
+                <viewController storyboardIdentifier="DetailStoryboard" id="8PX-nr-OJa" customClass="DetailDefaultView" customModule="NewTestApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SkC-WW-xud">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOK-aK-aE7">
+                                <rect key="frame" x="88" y="376" width="238" height="145"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6a-7b-itJ">
+                                <rect key="frame" x="129" y="529" width="156" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Alert"/>
+                                <connections>
+                                    <action selector="showAlert:" destination="8PX-nr-OJa" eventType="touchUpInside" id="G1C-mF-gVz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LgN-dD-mMt" firstAttribute="bottom" secondItem="GOK-aK-aE7" secondAttribute="bottom" constant="341" id="Pe3-0O-XGK"/>
+                            <constraint firstItem="GOK-aK-aE7" firstAttribute="leading" secondItem="LgN-dD-mMt" secondAttribute="leading" constant="88" id="SYq-Ia-68r"/>
+                            <constraint firstItem="LgN-dD-mMt" firstAttribute="trailing" secondItem="GOK-aK-aE7" secondAttribute="trailing" constant="88" id="SyC-lt-mvx"/>
+                            <constraint firstItem="GOK-aK-aE7" firstAttribute="top" secondItem="LgN-dD-mMt" secondAttribute="top" constant="332" id="VFc-Vd-Ens"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LgN-dD-mMt"/>
+                    </view>
+                    <connections>
+                        <outlet property="textLbl" destination="GOK-aK-aE7" id="gR5-7m-cPK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ClL-z0-kdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913.04347826086962" y="112.5"/>
+        </scene>
+    </scenes>
+</document>
